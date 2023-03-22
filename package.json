@@ -1,0 +1,27 @@
+{
+  "name": "rest-fullboocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.17.12",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "cypress-localstorage-commands": "^2.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/**/step-definitions/*.{js, ts}"
+    ]
+  }
+}
